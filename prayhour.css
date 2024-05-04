@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Inter:wght@100..900&display=swap');
+
+body {
+    background: #FEF9F5;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #D4C7B4;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+}
+
+.navbar{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 30px 30px;
+    
+}
+
+.navbar a:hover{
+    color: #e8e8e8;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #D4C7B4;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.sidebar ul{
+    list-style: none;
+    color: white;
+    width: 100%;
+}
+
+.sidebar li{
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: white;
+   
+}
+
+.sidebar a:hover{
+    color: #e8e8e8;
+}
+
+.sidebar i:hover{
+    color: #e8e8e8;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .suggestion{
+        padding: 0 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/*บทสวด*/
+
+.wrapper{
+    width: 100%;
+    margin: 80px auto 0;
+    font-size: clamp(16px,2.5vw,18px);
+    padding: 0;
+}
+
+.prayer{
+    padding: 0 60px;
+    color: #B48954;
+    justify-content: center;
+    
+}
+
+.prayer h1{
+    font-size: clamp(18px,2.5vw,20px);
+    margin: 0;
+    text-align: center;
+}
+
+.roundpray{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.roundpray h2{
+    font-size: clamp(18px,2.5vw,20px);
+}
+
+.roundpray ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.roundpray li{
+    padding: 0 5px 0 0;
+    font-size: clamp(18px,2.5vw,20px);
+}
+
+.button-ms{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.mean{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    color: #B48954;
+    background-color: white;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+.suggestion{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    color: #B48954;
+    background-color: white;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+.bg{
+    background-color: #E8E4DA;
+    padding: 5px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.prayer p{
+    font-size: clamp(16px,2.5vw,18px);
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+
+
+.button-bn{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-bn .back a{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #B48954;
+}
+
+.back ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button-bn .next a{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #B48954;
+}
+
+.back li{
+    padding-left: 5px;
+}
+
+
+.next li{
+    padding-right: 5px;
+}
+

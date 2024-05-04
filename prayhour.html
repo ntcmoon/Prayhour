@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrayHour</title>
+    <link rel="stylesheet" href="./prayhour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">PRAYHOUR</a>
+            
+                <ul class="list">
+                    <li class="hideOnMobile"><a href="suggest-us.html">ข้อเสนอแนะ</a></li>
+                    <li class="hideOnMobile"><a href="support.html">สนับสนุน PrayHour</a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a><i class="fa-solid fa-bars"></i></a></li>
+                </ul>    
+        </nav>
+        <nav class="sidebar">
+                <ul class="list">
+                    <li onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></li>
+                    <li><a href="suggest-us.html">ข้อเสนอแนะ</a></li>
+                    <li><a href="support.html">สนับสนุน PrayHour</a></li>
+                </ul>    
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        
+    </header>
+
+    <!--บทสวด-->
+    <section class="wrapper">
+        <div class="prayer">
+            <h1 class="">บทสวดกรวดน้ำ (อิมินา)</h1>
+            <div class="roundpray">
+                <h2>รอบที่</h2>
+                <ul class="round-pray">
+                    <li>1</li>
+                    <li>/</li>
+                    <li>7</li>
+                </ul>
+            </div>
+            <div class="button-ms">
+                <button class="mean">ความหมาย</button>
+                <button class="suggestion">คำแนะนำ</button>
+             </div>
+            <div class="bg">
+                <p>
+                    <object>
+                    (บทนำ) หันทะ มะยัง อุททิสะนาธิฏฐานะ คาถาโย ภะณามะ เส ฯ
+
+                    อิมินา ปุญญะกัมเมนะ อุปัชฌายา คุณุตตะรา
+                    อาจะริยูปะการา จะ มาตาปิตา จะ ญาตะกา
+                    สุริโย จันทิมา ราชา คุณะวันตา นะราปิ จะ
+                    พ์รัห์มะมารา จะ อินทา จะตุ- โลกะปาลา จะ เทวะตา
+                    ยะโม มิตตา มะนุสสา จะ มัชฌัตตา เวริกาปิ จะ
+                    สัพเพ สัตตา สุขี โหนตุ ปุญญานิ ปะกะตานิ เม
+                    สุขัญจะ ติวิธัง เทนตุ ขิปปัง ปาเปถะ โว มะตัง
+
+                    อิมินา ปุญญะกัมเมนะ อิมินา อุททิเสนะ จะ
+                    ขิปปาหัง สุละเภ เจวะ ตัณหุปาทานะเฉทะนัง
+                    เย สันตาเน หินา ธัมมา ยาวะ นิพพานะโต มะมัง
+                    นัสสันตุ สัพพะทาเยวะ ยัตถะ ชาโต ภะเว ภะเว
+                    อุชุจิตตัง สะติปัญญา สัลเลโข วิริยัมหินา
+                    มารา ละภันตุ โนกาสัง กาตุญจะ วิริเยสุ เม
+                    พุทธาทิปะวะโร นาโถ ธัมโม นาโถ วะรุตตะโม
+                    นาโถ ปัจเจกะพุทโธ จะ สังโฆ นาโถตตะโร มะมัง
+                    เตโสตตะมานุภาเวนะ มาโรกาสัง ละภันตุ มา ฯ
+                    </object>
+                </p>
+            </div>
+
+            </div>
+        </div>
+        <div class="button-bn">
+            <div class="back">
+                <ul>
+                    <a href="index.html">
+                    <li><i class="fa-solid fa-angle-left"></i></li>
+                    <li>กลับสู่หน้าหลัก</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="next">
+                <ul>
+                    <a href="./quote.html">
+                    <li>ถัดไป</li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                    </a>
+                </ul>
+            </div>
+    </section>
+</body>
+</html>
