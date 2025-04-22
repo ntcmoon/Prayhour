@@ -17,7 +17,7 @@ fetch('prayer.json')
 
 function getPrayers(jsonData){
     let out = "";
-    out += `<option value ="">Choose a prayer</option>`;
+    out += `<option value ="">เลือกบทสวด</option>`;
 
     jsonData.forEach(function(prayer){
         out += `<option value ="${prayer.nameprayer}">${prayer.nameprayer}</option>`
@@ -50,6 +50,17 @@ function displayPrayers(rounds) {
     }
 }
 
+function roundNumber() {
+    const input = document.getElementById('numberInput').value;
+    const number = parseFloat(input);
+
+    if (!isNaN(number)) {
+      const rounded = Math.round(number);
+      document.getElementById('result').textContent = `Rounded number: ${rounded}`;
+    } else {
+      document.getElementById('result').textContent = 'Please enter a valid number.';
+    }
+  }
 /* 
 
 
